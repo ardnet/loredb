@@ -66,7 +66,8 @@ $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
 $wgDBmysql5 = false;
 
 ## Shared memory settings
-$wgMainCacheType = CACHE_ACCEL;
+//$wgMainCacheType = CACHE_ACCEL;
+$wgMainCacheType = CACHE_NONE;
 $wgMemCachedServers = [];
 
 ## To enable image uploads, make sure the 'images' directory
@@ -139,3 +140,19 @@ enableSemantics( 'loredb.ardianto.net' );
 
 include_once "$IP/extensions/SemanticForms/SemanticForms.php";
 require_once "$IP/extensions/HeaderTabs/HeaderTabs.php";
+
+$wgShowExceptionDetails = true;
+
+$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc',
+  'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx',
+  'pptx', 'ps', 'odt', 'ods', 'odp', 'odg', 'csv',
+);
+
+// Calls to deprecated methods will trigger E_USER_DEPRECATED errors
+// in the PHP error log.
+$wgDevelopmentWarnings = true;
+
+// Expose debug info for SQL errors.
+$wgDebugDumpSql = true;
+$wgShowDBErrorBacktrace = true;
+$wgShowSQLErrors = true;
