@@ -159,23 +159,23 @@ $wgShowSQLErrors = true;
 
 $wgUploadDirectory = '/var/www/domains/loredb.ardianto.net/dev/htdocs/images';
 
-require_once "$IP/extensions/VisualEditor/VisualEditor.php";
-
-// Enable by default for everybody
-$wgDefaultUserOptions['visualeditor-enable'] = 1;
-
-// Don't allow users to disable it
-$wgHiddenPrefs[] = 'visualeditor-enable';
+//require_once "$IP/extensions/VisualEditor/VisualEditor.php";
+//
+//// Enable by default for everybody
+//$wgDefaultUserOptions['visualeditor-enable'] = 1;
+//
+//// Don't allow users to disable it
+//$wgHiddenPrefs[] = 'visualeditor-enable';
 
 // OPTIONAL: Enable VisualEditor's experimental code features
 #$wgDefaultUserOptions['visualeditor-enable-experimental'] = 1;
 
-$wgVirtualRestConfig['modules']['parsoid'] = array(
-  // URL to the Parsoid instance
-  // Use port 8142 if you use the Debian package
-  'url' => 'http://loredb.ardianto.net/api.php',
-  // Parsoid "domain", see below (optional)
-  'domain' => 'loredb.ardianto.net',
-  // Parsoid "prefix", see below (optional)
-  'prefix' => 'myspecialwiki',
-);
+//$wgVirtualRestConfig['modules']['parsoid'] = array(
+//  // URL to the Parsoid instance
+//  // Use port 8142 if you use the Debian package
+//  'url' => 'http://loredb.ardianto.net/api.php',
+//  // Parsoid "domain", see below (optional)
+//  'domain' => 'loredb.ardianto.net',
+//  // Parsoid "prefix", see below (optional)
+//  'prefix' => 'myspecialwiki',
+//);
