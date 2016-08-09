@@ -1,0 +1,251 @@
+/*!
+ * @since 1.0
+ * @licence GNU GPL v2+
+ *
+ * @author mwjames
+ */
+.scite-reference {
+	vertical-align: super;
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.scite-referencelist ol .scite-backlinks {
+	vertical-align: super;
+	font-size: 80%;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.scite-referencelist ul .scite-backlinks, .scite-referencelist ul .scite-backlink  {
+	vertical-align: super;
+	font-size: 80%;
+	line-height: 1;
+}
+
+.scite-referencelist ol .scite-backlink, .scite-referencelist ul .scite-backlink[data-citeref-format='key'] {
+	vertical-align: middle;
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.scite-referencelist .scite-citation {
+	font-size: 90%;
+}
+
+.scite-referencelist-columns-responsive {
+  -webkit-columns: 3 25em;
+     -moz-columns: 3 25em;
+          columns: 3 25em;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+          margin-bottom: -2em;
+}
+
+.scite-referencelist-columns-responsive-single {
+  -webkit-columns: 1 100%;
+     -moz-columns: 1 100%;
+          columns: 1 100%;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+          margin-bottom: -2em;
+}
+
+.scite-referencelist .scite-citation-text {
+	font-size: 100%;
+	font-family: 'Times New Roman',stixgeneral,serif;
+	font: 1.1307em/1.375 'Times New Roman', serif;
+	word-wrap: break-word;
+}
+
+.scite-citation-resourcelink {
+	font-size: 130%;
+}
+
+.scite-citation-key {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.scite-citeref-number, .scite-citeref-shortcaption {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+.scite-citeref-shortcaption {
+	margin-left: 2px;
+}
+
+.scite-tooltip {
+	min-width: 250px;
+	min-height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.scite-tooltip-cache-indicator {
+	float: left;
+	margin-right:5px;
+}
+
+.scite-tooltip-cache-browser::after {
+	content:"◐"; /* &#9680; */
+}
+
+.scite-tooltip-cache-backend::after {
+	content:"◑"; /* &#9681; */
+}
+
+.scite-citeref-number:target, .scite-citeref-key:target {
+	background-color: rgba( 0,127,255,0.133 );
+}
+
+.scite-citeref-number a::after {
+	content:"]";
+}
+
+.scite-citeref-number a::before {
+	content:"[";
+}
+
+.scite-citeref-key a::after {
+	content:")";
+}
+
+.scite-citeref-key a::before {
+	content:"(";
+}
+
+.scite-citeref-number a.external::after, .scite-citeref-key a.external::after {
+	content:"";
+}
+
+.scite-citeref-number a.external::before, .scite-citeref-key a.external::before {
+	content:"";
+}
+
+/* Whether it is really needed or not, I don't know but the Cite extension used
+ * this to fix references in case of RTL words at the end of a reference
+ */
+.scite-citeref-number, .scite-citeref-key {
+	unicode-bidi: -moz-isolate;
+	unicode-bidi: -webkit-isolate;
+	unicode-bidi: isolate;
+}
+
+.scite-pre {
+	font-family: monospace;
+	padding: 1em;
+	border: 1px dashed #2f6fab;
+	border-top-color: rgb(47, 111, 171);
+	border-top-style: dashed;
+	border-top-width: 1px;
+	border-right-color: rgb(47, 111, 171);
+	border-right-style: dashed;
+	border-right-width: 1px;
+	border-bottom-color: rgb(47, 111, 171);
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-left-color: rgb(47, 111, 171);
+	border-left-style: dashed;
+	border-left-width: 1px;
+	color: black;
+	background-color: #f9f9f9;
+	line-height: 1.1em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	font-size: 12px;
+}
+
+.scite-textarea {
+	word-wrap: break-word;
+	padding: 1em;
+
+}
+
+.scite-metadata-search-action {
+	float: right;
+	font-size: 80%;
+	padding: 5px;
+}
+
+.scite-metadata-search-types {
+	font-size: 85%;
+}
+
+.scite-metadata-search-types ul {
+	line-height: 1.8em;
+}
+
+.scite-action-button {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 1px 5px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.scite-metadata-search-action a:link {
+	text-decoration: none;
+}
+
+.scite-metadata-search-action a:visited {
+	text-decoration: none;
+}
+
+.scite-metadata-search-action a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+.scite-metadata-search-action a:active {
+	text-decoration: none;
+}
+
+/*
+ * Special treatment for the chameleon skin
+ */
+.skin-chameleon .smw-form-select, .skin-chameleon .smw-form-input {
+	padding: 0px 1px;
+	height: 27px;
+}
+
+.skin-chameleon .smw-form-horizontalrule {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
