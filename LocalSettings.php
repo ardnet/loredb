@@ -157,6 +157,8 @@ $wgDebugDumpSql = true;
 $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
 
+$wgUploadDirectory = '/var/www/domains/loredb.ardianto.net/dev/htdocs/images';
+
 // Create a local backend with a null lock manager
 $wgFileBackends[] = array(
   'name'        => 'local-backend',
@@ -187,3 +189,4 @@ $wgLocalFileRepo = array (
   'deletedHashLevels' => $wgHashedUploadDirectory ? 3 : 0,
   'backend'           => 'local-backend',
 );
+
