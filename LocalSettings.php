@@ -135,6 +135,6 @@ wfLoadExtension( 'WikiEditor' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
-
-
 enableSemantics( 'loredb.ardianto.net' );
+
+include_once "$IP/extensions/SemanticForms/SemanticForms.php";
