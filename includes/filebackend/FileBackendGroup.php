@@ -93,7 +93,7 @@ class FileBackendGroup {
 			$autoBackends[] = [
 				'name' => $backendName,
 				'class' => 'FSFileBackend',
-				'lockManager' => 'nullLockManager',
+				'lockManager' => 'fsLockManager',
 				'containerPaths' => [
 					"{$repoName}-public" => "{$directory}",
 					"{$repoName}-thumb" => $thumbDir,
