@@ -138,3 +138,4 @@ wfLoadExtension( 'WikiEditor' );
 enableSemantics( 'loredb.ardianto.net' );
 
 include_once "$IP/extensions/SemanticForms/SemanticForms.php";
+require_once "$IP/extensions/HeaderTabs/HeaderTabs.php";
