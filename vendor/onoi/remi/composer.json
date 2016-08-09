@@ -1,0 +1,31 @@
+{
+	"name": "onoi/remi",
+	"type": "library",
+	"description": "A small library to mine (parse) REST responses from selected metatdata providers",
+	"keywords": [
+		"rest"
+	],
+	"homepage": "https://github.com/onoi/remi",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "mwjames",
+			"homepage": "https://github.com/mwjames"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"onoi/http-request":"~1.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Onoi\\Remi\\": "src/"
+		}
+	},
+	"config": {
+		"process-timeout": 0
+	},
+	"scripts":{
+		"phpunit": "phpunit -c phpunit.xml.dist"
+	}
+}
