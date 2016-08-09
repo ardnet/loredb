@@ -159,13 +159,13 @@ $wgShowSQLErrors = true;
 
 $wgUploadDirectory = '/var/www/domains/loredb.ardianto.net/dev/htdocs/images';
 
-//require_once "$IP/extensions/VisualEditor/VisualEditor.php";
+require_once "$IP/extensions/VisualEditor/VisualEditor.php";
 
 // Enable by default for everybody
-//$wgDefaultUserOptions['visualeditor-enable'] = 1;
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
 
 // Don't allow users to disable it
-//$wgHiddenPrefs[] = 'visualeditor-enable';
+$wgHiddenPrefs[] = 'visualeditor-enable';
 
 // OPTIONAL: Enable VisualEditor's experimental code features
 #$wgDefaultUserOptions['visualeditor-enable-experimental'] = 1;
