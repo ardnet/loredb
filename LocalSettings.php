@@ -160,33 +160,33 @@ $wgShowSQLErrors = true;
 $wgUploadDirectory = '/var/www/domains/loredb.ardianto.net/dev/htdocs/images';
 
 // Create a local backend with a null lock manager
-$wgFileBackends[] = array(
-  'name'        => 'local-backend',
-  'class'       => 'FSFileBackend',
-  'lockManager' => 'nullLockManager',
-  'containerPaths' => array(
-    'local-public'  => "{$wgUploadDirectory}",
-    'local-thumb'   => "{$wgUploadDirectory}/thumb",
-    'local-transcoded' => "{$wgUploadDirectory}/transcoded",
-    'local-deleted' => $wgDeletedDirectory,
-    'local-temp'    => "{$wgUploadDirectory}/temp",
-  ),
-  'fileMode'    => 0644,
-);
-
-// Define a standard file repository that uses the local backend defined before
-$wgLocalFileRepo = array (
-  'class'             => 'LocalRepo',
-  'name'              => 'local',
-  'directory'         => $wgUploadDirectory,
-  'scriptDirUrl'      => $wgScriptPath,
-  'scriptExtension'   => $wgScriptExtension,
-  'url'               => $wgUploadBaseUrl ? $wgUploadBaseUrl . $wgUploadPath : $wgUploadPath,
-  'hashLevels'        => $wgHashedUploadDirectory ? 2 : 0,
-  'thumbScriptUrl'    => $wgThumbnailScriptPath,
-  'transformVia404'   => !$wgGenerateThumbnailOnParse,
-  'deletedDir'        => $wgDeletedDirectory,
-  'deletedHashLevels' => $wgHashedUploadDirectory ? 3 : 0,
-  'backend'           => 'local-backend',
-);
+//$wgFileBackends[] = array(
+//  'name'        => 'local-backend',
+//  'class'       => 'FSFileBackend',
+//  'lockManager' => 'nullLockManager',
+//  'containerPaths' => array(
+//    'local-public'  => "{$wgUploadDirectory}",
+//    'local-thumb'   => "{$wgUploadDirectory}/thumb",
+//    'local-transcoded' => "{$wgUploadDirectory}/transcoded",
+//    'local-deleted' => $wgDeletedDirectory,
+//    'local-temp'    => "{$wgUploadDirectory}/temp",
+//  ),
+//  'fileMode'    => 0644,
+//);
+//
+//// Define a standard file repository that uses the local backend defined before
+//$wgLocalFileRepo = array (
+//  'class'             => 'LocalRepo',
+//  'name'              => 'local',
+//  'directory'         => $wgUploadDirectory,
+//  'scriptDirUrl'      => $wgScriptPath,
+//  'scriptExtension'   => $wgScriptExtension,
+//  'url'               => $wgUploadBaseUrl ? $wgUploadBaseUrl . $wgUploadPath : $wgUploadPath,
+//  'hashLevels'        => $wgHashedUploadDirectory ? 2 : 0,
+//  'thumbScriptUrl'    => $wgThumbnailScriptPath,
+//  'transformVia404'   => !$wgGenerateThumbnailOnParse,
+//  'deletedDir'        => $wgDeletedDirectory,
+//  'deletedHashLevels' => $wgHashedUploadDirectory ? 3 : 0,
+//  'backend'           => 'local-backend',
+//);
 
