@@ -181,3 +181,5 @@ $wgUploadDirectory = '/var/www/domains/loredb.ardianto.net/dev/htdocs/images';
 //);
 
 require_once "$IP/extensions/ExternalData/ExternalData.php";
+
+$edgDirectoryPath['ext_data_id'] = "/var/www/domains/loredb.ardianto.net/dev/htdocs/images";
