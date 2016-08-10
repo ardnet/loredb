@@ -179,3 +179,5 @@ $wgUploadDirectory = '/var/www/domains/loredb.ardianto.net/dev/htdocs/images';
 //  // Parsoid "prefix", see below (optional)
 //  'prefix' => 'myspecialwiki',
 //);
+
+require_once "$IP/extensions/ExternalData/ExternalData.php";
