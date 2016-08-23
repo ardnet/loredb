@@ -28,7 +28,7 @@ $wgSitename = "LoreDB";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://loredb.ardianto.net";
+$wgServer = "http://loredb.dev";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -51,10 +51,10 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "localhost";
+$wgDBserver = "mysql";
 $wgDBname = "loredb";
-$wgDBuser = "root";
-$wgDBpassword = "Eighaek8";
+$wgDBuser = "loredb-user";
+$wgDBpassword = "raid9jeS";
 
 # MySQL specific settings
 $wgDBprefix = "";
