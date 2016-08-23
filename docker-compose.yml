@@ -1,0 +1,30 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    links:
+      - mysql:mysql
+    working_dir: /var/www/html
+    expose:
+      - "8000"
+
+  mysql:
+    image: mysql:5.6
+    environment:
+      MYSQL_ROOT_PASSWORD: CaiXee2v
+      MYSQL_DATABASE: loredb
+      MYSQL_USER: loredb-user
+      MYSQL_PASSWORD: raid9jeS
+    expose:
+      - "3306"
+
+
+
+
+
+
+
